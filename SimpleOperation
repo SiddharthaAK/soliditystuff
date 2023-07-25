@@ -1,0 +1,12 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract SimpleLoop {
+    uint public result;
+
+    function performSimpleOperation() public {
+        for (uint i = 0; i < 1000; i++) {
+            result += i;
+        }
+    }
+}
