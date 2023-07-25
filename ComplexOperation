@@ -3,19 +3,19 @@ pragma solidity ^0.8.19;
 
 contract ComplexLoop {
     function performComplexOperation() public pure {
-        uint256 res;
-        for (uint256 i = 0; i < 100; i++) {
+        uint res;
+        for (uint i = 0; i < 100; i++) {
             res = fibonacci(i);
         }
     }
 
-    function fibonacci(uint256 n) internal pure returns (uint256) {
+    function fibonacci(uint n) internal pure returns (uint) {
         if (n <= 1) {
             return n;
         }
-        uint256 a = 0;
-        uint256 b = 1;
-        uint256 c;
+        uint a = 0;
+        uint b = 1;
+        uint c;
         for (uint256 i = 2; i <= n; i++) {
             c = a + b;
             a = b;
